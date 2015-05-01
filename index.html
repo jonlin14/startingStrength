@@ -5,8 +5,16 @@
     <title>Starting Strength Log</title>
   </head>
   <body ng-controller = "liftingCtrl">
-    <input type="text" ng-model="name">
-    {{ name }}
+
+    <h3>Lifts</h3>
+    <ul>
+        <form ng-submit = "addNumbers()">
+        <li>  <input type="text" ng-model="squat"> Squat </li>
+        <li>  <input type="text" ng-model="militaryPress"> Military Press </li>
+        <li>  <input type="text" ng-model="deadlift"> Deadlift </li>
+        </form>
+    </ul>
+
     <script src="lib/angular.js"></script>
     <script src="app.js"></script>
     <script src="controllers/liftingCtrl.js"></script>
