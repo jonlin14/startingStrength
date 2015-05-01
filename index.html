@@ -9,10 +9,17 @@
     <h3>Lifts</h3>
     <ul>
         <form ng-submit = "addNumbers()">
-        <li>  <input type="text" ng-model="squat"> Squat </li>
-        <li>  <input type="text" ng-model="militaryPress"> Military Press </li>
-        <li>  <input type="text" ng-model="deadlift"> Deadlift </li>
+        <li><input type="text" ng-model="squat">  Squat</li>
+        <li><input type="text" ng-model="deadlift">  Deadlift</li>
+        <li><input type="text" ng-model="militaryPress">  Military Press</li>
+        <button type = "submit">Go!</button>
         </form>
+    </ul>
+
+    <ul>
+      <li ng-repeat="item in squatArray">
+        {{ item }}
+      </li>
     </ul>
 
     <script src="lib/angular.js"></script>
